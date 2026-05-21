@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edificio Bertha — Arte · Música · Comunidad | Mexicali</title>
+  <meta name="description" content="Edificio histórico en Mexicali transformado en hub cultural. Galería de arte urbano, espacio de música en vivo para bandas originales y centro de networking.">
+  <meta name="keywords" content="Edificio Bertha, Mexicali, arte urbano, galería, música en vivo, bandas originales, networking, eventos, Baja California">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Edificio Bertha">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="es_MX">
+  <meta property="og:site_name"   content="Edificio Bertha">
+  <meta property="og:title"       content="Edificio Bertha — Arte · Música · Comunidad | Mexicali">
+  <meta property="og:description" content="Edificio histórico en Mexicali transformado en hub cultural. Galería de arte urbano, música en vivo y espacio de networking creativo.">
+  <meta property="og:url"         content="https://edificiobertha.mx/">
+  <meta property="og:image"       content="https://edificiobertha.mx/imageheader.png">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"    content="Fachada del Edificio Bertha en Mexicali, B.C.">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@edificiobertha">
+  <meta name="twitter:title"       content="Edificio Bertha — Arte · Música · Comunidad">
+  <meta name="twitter:description" content="Hub cultural en Mexicali: galería de arte urbano, música en vivo y networking creativo en un edificio histórico.">
+  <meta name="twitter:image"       content="https://edificiobertha.mx/imageheader.png">
+  <meta name="twitter:image:alt"   content="Edificio Bertha, Mexicali">
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Edificio Bertha",
+    "description": "Hub cultural en Mexicali: galería de arte urbano, música en vivo y networking creativo en un edificio histórico.",
+    "url": "https://edificiobertha.mx",
+    "logo": "https://edificiobertha.mx/imageheader.png",
+    "image": "https://edificiobertha.mx/imageheader.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Principal #123, Centro",
+      "addressLocality": "Mexicali",
+      "addressRegion": "Baja California",
+      "postalCode": "21100",
+      "addressCountry": "MX"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "32.6245",
+      "longitude": "-115.4523"
+    },
+    "telephone": "+52-686-123-4567",
+    "email": "hola@edificiobertha.mx",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "12:00", "closes": "02:00" }
+    ],
+    "sameAs": ["https://instagram.com/edificiobertha"]
+  }
+  </script>
+
+  <!-- Schema.org: Events -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Event",
+        "name": "Inauguración: Paredes que Hablan",
+        "startDate": "2026-05-24T19:00",
+        "location": { "@type": "Place", "name": "Galería Urbana — Edificio Bertha", "address": "Calle Principal #123, Mexicali, B.C." },
+        "organizer": { "@type": "Organization", "name": "Edificio Bertha" },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "Noche de Bandas Originales Vol. 12",
+        "startDate": "2026-05-28T21:00",
+        "location": { "@type": "Place", "name": "Escenario Bertha — Edificio Bertha", "address": "Calle Principal #123, Mexicali, B.C." },
+        "organizer": { "@type": "Organization", "name": "Edificio Bertha" },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+      },
+      {
+        "@type": "BusinessEvent",
+        "name": "Creative Mornings Mexicali",
+        "startDate": "2026-05-31T09:00",
+        "location": { "@type": "Place", "name": "La Sala — Edificio Bertha", "address": "Calle Principal #123, Mexicali, B.C." },
+        "organizer": { "@type": "Organization", "name": "Edificio Bertha" },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <div class="container navbar-inner">
+      <a href="#" class="logo" aria-label="Edificio Bertha — Inicio">EDIFICIO <span>BERTHA</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#espacios">Espacios</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#calendario" class="nav-cta">Ver Eventos</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <section class="hero" id="hero" aria-label="Hero — Edificio Bertha">
+      <div class="hero-bg" aria-hidden="true">
+        <video id="heroVideo" autoplay loop muted playsinline preload="metadata" poster="imageheader.png">
+          <source src="videoheader edificiobertha.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-content">
+        <span class="hero-label">Mexicali, Baja California</span>
+        <h1 class="hero-title">
+          EDIFICIO<br><span class="accent">BERTHA</span>
+        </h1>
+        <p class="hero-subtitle">
+          Arte urbano. Música en vivo. Conexiones reales. Un edificio con historia que alberga el presente creativo de Mexicali.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#calendario" class="btn btn-primary">Ver Calendario</a>
+          <a href="#historia" class="btn btn-secondary">Conocer la Historia</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </div>
+    </section>
+
+    <section class="historia section-padding" id="historia" aria-labelledby="historia-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Historia</span>
+          <h2 class="section-title" id="historia-title">Rescatado del<br><span class="text-accent">Tiempo</span></h2>
+          <p class="section-desc">Lo que fue testigo del pasado industrial de Mexicali, ahora es casa de la cultura contemporánea.</p>
+        </div>
+        <div class="historia-grid">
+          <div class="historia-image reveal">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=webp&w=800&q=80 800w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=webp&w=1200&q=80 1200w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Edificio Bertha - Fachada histórica de ladrillo en Mexicali">
+          </div>
+          <div class="historia-text reveal">
+            <h3>Un edificio con <span class="text-accent">alma</span></h3>
+            <p>Construido en las primeras décadas del siglo XX, el Edificio Bertha fue testigo del auge industrial y comercial de Mexicali. Sus muros de ladrillo y concreto guardan la memoria de una ciudad que creció entre el desierto y la frontera.</p>
+            <p>Tras años de abandono, un colectivo de artistas, músicos y emprendedores locales rescató este espacio para convertirlo en el corazón cultural de la ciudad. Hoy, sus pasillos resuenan con exposiciones de arte urbano, conciertos de bandas emergentes y conversaciones que construyen comunidad.</p>
+            <blockquote class="historia-quote">"No restauramos un edificio. Le devolvimos el pulso."</blockquote>
+            <div class="timeline" role="list" aria-label="Línea de tiempo del Edificio Bertha">
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-year">1920s</div>
+                <div class="timeline-text">Construcción del edificio como parte del desarrollo industrial de Mexicali.</div>
+              </div>
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-year">1980s</div>
+                <div class="timeline-text">Cierre de operaciones y abandono progresivo del espacio.</div>
+              </div>
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-year">2018</div>
+                <div class="timeline-text">Rescate por colectivo cultural local. Inicio de la transformación.</div>
+              </div>
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-text">Inauguración oficial como hub cultural: galería, música y networking.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="espacios section-padding" id="espacios" aria-labelledby="espacios-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Espacios</span>
+          <h2 class="section-title" id="espacios-title">Tres Almas,<br>Un Solo <span class="text-accent">Latido</span></h2>
+          <p class="section-desc">Cada rincón del Edificio Bertha tiene una función, pero todas comparten el mismo propósito: crear, conectar y transformar.</p>
+        </div>
+        <div class="espacios-grid">
+          <article class="espacio-card reveal">
+            <div class="espacio-image">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?fm=webp&w=40&q=10"
+                data-src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?fm=webp&w=800&q=80"
+                data-srcset="https://images.unsplash.com/photo-1561214115-f2f134cc4912?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1561214115-f2f134cc4912?fm=webp&w=800&q=80 800w"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Galería Urbana — espacio de arte urbano y murales">
+              <div class="espacio-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              </div>
+            </div>
+            <div class="espacio-content">
+              <span class="espacio-tag">Exposiciones · Murales · Talleres</span>
+              <h3 class="espacio-title">Galería Urbana</h3>
+              <p class="espacio-desc">Murales, stencil, graffiti y arte callejero en un espacio que celebra la expresión sin filtros. Exposiciones rotativas de artistas locales e internacionales.</p>
+              <a href="#calendario" class="espacio-link">Ver Exposiciones <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+          <article class="espacio-card reveal">
+            <div class="espacio-image">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?fm=webp&w=40&q=10"
+                data-src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?fm=webp&w=800&q=80"
+                data-srcset="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?fm=webp&w=800&q=80 800w"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Escenario Bertha — foro de música en vivo">
+              <div class="espacio-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              </div>
+            </div>
+            <div class="espacio-content">
+              <span class="espacio-tag">Conciertos · Bandas Originales · Acústica</span>
+              <h3 class="espacio-title">Escenario Bertha</h3>
+              <p class="espacio-desc">Acústica diseñada para la música en vivo. Escenario íntimo para bandas originales, sesiones acústicas y jam sessions que rompen fronteras sonoras.</p>
+              <a href="#calendario" class="espacio-link">Ver Conciertos <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+          <article class="espacio-card reveal">
+            <div class="espacio-image">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?fm=webp&w=40&q=10"
+                data-src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?fm=webp&w=800&q=80"
+                data-srcset="https://images.unsplash.com/photo-1515187029135-18ee286d815b?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1515187029135-18ee286d815b?fm=webp&w=800&q=80 800w"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="La Sala — espacio de networking y coworking">
+              <div class="espacio-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+            </div>
+            <div class="espacio-content">
+              <span class="espacio-tag">Networking · Coworking · Eventos</span>
+              <h3 class="espacio-title">La Sala</h3>
+              <p class="espacio-desc">Espacio versátil para conectar mentes creativas. Meetups, pitches, workshops y eventos de networking donde nacen las colaboraciones del mañana.</p>
+              <a href="#calendario" class="espacio-link">Ver Eventos <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendario section-padding" id="calendario" aria-labelledby="calendario-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Calendario</span>
+          <h2 class="section-title" id="calendario-title">Siempre Hay<br><span class="text-accent">Algo</span></h2>
+          <p class="section-desc">Exposiciones, conciertos, talleres y encuentros. El Edificio Bertha nunca duerme.</p>
+        </div>
+        <div class="calendario-filters reveal" role="group" aria-label="Filtrar eventos por categoría">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-btn" data-filter="arte" aria-pressed="false">Arte</button>
+          <button class="filter-btn" data-filter="musica" aria-pressed="false">Música</button>
+          <button class="filter-btn" data-filter="networking" aria-pressed="false">Networking</button>
+        </div>
+        <div class="event-list" role="list" aria-live="polite" aria-label="Lista de eventos">
+          <article class="event-item reveal" data-category="arte" role="listitem">
+            <div class="event-date" aria-label="24 de Mayo">
+              <div class="event-date-day" aria-hidden="true">24</div>
+              <div class="event-date-month" aria-hidden="true">Mayo</div>
+            </div>
+            <div class="event-info">
+              <h4>Inauguración: "Paredes que Hablan"</h4>
+              <div class="event-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 19:00 hrs</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Galería Urbana</span>
+              </div>
+            </div>
+            <span class="event-badge badge-arte">Arte</span>
+          </article>
+          <article class="event-item reveal" data-category="musica" role="listitem">
+            <div class="event-date" aria-label="28 de Mayo">
+              <div class="event-date-day" aria-hidden="true">28</div>
+              <div class="event-date-month" aria-hidden="true">Mayo</div>
+            </div>
+            <div class="event-info">
+              <h4>Noche de Bandas Originales: Vol. 12</h4>
+              <div class="event-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 21:00 hrs</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Escenario Bertha</span>
+              </div>
+            </div>
+            <span class="event-badge badge-musica">Música</span>
+          </article>
+          <article class="event-item reveal" data-category="networking" role="listitem">
+            <div class="event-date" aria-label="31 de Mayo">
+              <div class="event-date-day" aria-hidden="true">31</div>
+              <div class="event-date-month" aria-hidden="true">Mayo</div>
+            </div>
+            <div class="event-info">
+              <h4>Creative Mornings Mexicali</h4>
+              <div class="event-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 09:00 hrs</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> La Sala</span>
+              </div>
+            </div>
+            <span class="event-badge badge-networking">Networking</span>
+          </article>
+          <article class="event-item reveal" data-category="arte" role="listitem">
+            <div class="event-date" aria-label="5 de Junio">
+              <div class="event-date-day" aria-hidden="true">05</div>
+              <div class="event-date-month" aria-hidden="true">Junio</div>
+            </div>
+            <div class="event-info">
+              <h4>Taller de Stencil y Serigrafía Urbana</h4>
+              <div class="event-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 16:00 hrs</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Galería Urbana</span>
+              </div>
+            </div>
+            <span class="event-badge badge-arte">Arte</span>
+          </article>
+          <article class="event-item reveal" data-category="musica" role="listitem">
+            <div class="event-date" aria-label="12 de Junio">
+              <div class="event-date-day" aria-hidden="true">12</div>
+              <div class="event-date-month" aria-hidden="true">Junio</div>
+            </div>
+            <div class="event-info">
+              <h4>Sesión Acústica: Artist Showcase</h4>
+              <div class="event-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 20:00 hrs</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Escenario Bertha</span>
+              </div>
+            </div>
+            <span class="event-badge badge-musica">Música</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria section-padding" id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Galería</span>
+          <h2 class="section-title" id="galeria-title">Lo Que Ocurre<br><span class="text-accent">Aquí</span></h2>
+          <p class="section-desc">Momentos capturados entre murales, acordes y conversaciones. Así se vive el Edificio Bertha.</p>
+        </div>
+        <div class="galeria-grid" role="list" aria-label="Galería fotográfica del Edificio Bertha">
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 50vw"
+              alt="Mural en proceso en la Galería Urbana">
+            <div class="galeria-caption" aria-hidden="true"><h5>Mural en Proceso</h5><p>Galería Urbana · 2024</p></div>
+          </div>
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1501386761578-eac5c94b800a?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, 25vw"
+              alt="Concierto en vivo — Noche de Bandas Originales">
+            <div class="galeria-caption" aria-hidden="true"><h5>Noche de Bandas Vol. 8</h5><p>Escenario Bertha · 2024</p></div>
+          </div>
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1540575467063-178a50c2df87?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1540575467063-178a50c2df87?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, 25vw"
+              alt="Evento de networking en La Sala">
+            <div class="galeria-caption" aria-hidden="true"><h5>Creative Mornings</h5><p>La Sala · 2024</p></div>
+          </div>
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1513364776144-60967b0f800f?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1513364776144-60967b0f800f?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, 50vw"
+              alt="Exposición colectiva de arte">
+            <div class="galeria-caption" aria-hidden="true"><h5>Exposición Colectiva</h5><p>Galería Urbana · 2024</p></div>
+          </div>
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1514525253161-7a46d19cd819?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, 25vw"
+              alt="Sesión acústica en el Escenario Bertha">
+            <div class="galeria-caption" aria-hidden="true"><h5>Sesión Acústica</h5><p>Escenario Bertha · 2024</p></div>
+          </div>
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1558618666-fcd25c85f82e?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, 25vw"
+              alt="Taller de stencil y arte urbano">
+            <div class="galeria-caption" aria-hidden="true"><h5>Taller de Stencil</h5><p>Galería Urbana · 2024</p></div>
+          </div>
+          <div class="galeria-item reveal" role="listitem">
+            <img
+              class="lqip"
+              src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?fm=webp&w=40&q=10"
+              data-src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?fm=webp&w=800&q=80"
+              data-srcset="https://images.unsplash.com/photo-1523580494863-6f3031224c94?fm=webp&w=400&q=80 400w, https://images.unsplash.com/photo-1523580494863-6f3031224c94?fm=webp&w=800&q=80 800w"
+              sizes="(max-width: 480px) 100vw, 25vw"
+              alt="Fachada histórica del Edificio Bertha">
+            <div class="galeria-caption" aria-hidden="true"><h5>Fachada Histórica</h5><p>Edificio Bertha · 2024</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comunidad section-padding" id="comunidad" aria-labelledby="comunidad-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Comunidad</span>
+          <h2 class="section-title" id="comunidad-title">Los Que Lo Hacen<br><span class="text-accent">Posible</span></h2>
+          <p class="section-desc">Artistas, músicos, emprendedores y soñadores que dan vida a cada rincón del edificio.</p>
+        </div>
+        <div class="comunidad-grid">
+          <article class="comunidad-card reveal">
+            <div class="comunidad-avatar">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fm=webp&w=20&q=10"
+                data-src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fm=webp&w=200&q=80"
+                sizes="80px"
+                alt="Carlos Ruiz, Artista Urbano">
+            </div>
+            <h4 class="comunidad-name">Carlos Ruiz</h4>
+            <span class="comunidad-role">Artista Urbano</span>
+            <p class="comunidad-quote">"El Bertha me dio las paredes que necesitaba para contar historias que la calle no deja hablar."</p>
+          </article>
+          <article class="comunidad-card reveal">
+            <div class="comunidad-avatar">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=webp&w=20&q=10"
+                data-src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=webp&w=200&q=80"
+                sizes="80px"
+                alt="Ana Martínez, Vocalista de Los del Desierto">
+            </div>
+            <h4 class="comunidad-name">Ana Martínez</h4>
+            <span class="comunidad-role">Vocalista · Los del Desierto</span>
+            <p class="comunidad-quote">"Cada noche en el Escenario Bertha es distinta. La acústica y la energía del público son mágicas."</p>
+          </article>
+          <article class="comunidad-card reveal">
+            <div class="comunidad-avatar">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fm=webp&w=20&q=10"
+                data-src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fm=webp&w=200&q=80"
+                sizes="80px"
+                alt="Miguel Torres, Emprendedor y cofundador de TechHub MX">
+            </div>
+            <h4 class="comunidad-name">Miguel Torres</h4>
+            <span class="comunidad-role">Emprendedor · TechHub MX</span>
+            <p class="comunidad-quote">"Conecté con mi cofundador en un evento de networking aquí. El Bertha es donde nacen las ideas."</p>
+          </article>
+          <article class="comunidad-card reveal">
+            <div class="comunidad-avatar">
+              <img
+                class="lqip"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=webp&w=20&q=10"
+                data-src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=webp&w=200&q=80"
+                sizes="80px"
+                alt="Lucía Hernández, Curadora de la Galería Urbana">
+            </div>
+            <h4 class="comunidad-name">Lucía Hernández</h4>
+            <span class="comunidad-role">Curadora · Galería Urbana</span>
+            <p class="comunidad-quote">"Curar aquí no es exponer arte. Es crear diálogos entre el edificio, el artista y la comunidad."</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto section-padding" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Contacto</span>
+          <h2 class="section-title" id="contacto-title">Encuéntranos en<br><span class="text-accent">Mexicali</span></h2>
+          <p class="section-desc">Visítanos, escríbenos o síguenos. El Edificio Bertha está abierto para quienes quieren crear.</p>
+        </div>
+        <div class="contacto-grid">
+          <div class="contacto-info reveal">
+            <h3>Ven a <span class="text-accent">Conocernos</span></h3>
+            <p>Estamos en el corazón de Mexicali, en un edificio que no puedes dejar de notar. Ya sea que vengas a una exposición, un concierto o simplemente a tomar café y conocer gente, las puertas están abiertas.</p>
+            <div class="contacto-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><strong>Dirección</strong><span>Calle Principal #123, Centro, Mexicali, B.C. 21100</span></div>
+            </div>
+            <div class="contacto-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div><strong>Horarios</strong><span>Lun–Vie: 10:00 – 22:00 hrs · Sáb–Dom: 12:00 – 02:00 hrs</span></div>
+            </div>
+            <div class="contacto-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div><strong>Teléfono</strong><span><a href="tel:+526861234567">+52 (686) 123-4567</a></span></div>
+            </div>
+            <div class="contacto-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div><strong>Email</strong><span><a href="mailto:hola@edificiobertha.mx">hola@edificiobertha.mx</a></span></div>
+            </div>
+            <div class="map-placeholder" role="img" aria-label="Mapa de ubicación — próximamente">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Mapa de Google Maps (reemplazar con iframe)</span>
+            </div>
+          </div>
+          <div class="contacto-form reveal">
+            <h3>Escríbenos</h3>
+            <form action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto" required>
+                  <option value="">Selecciona un asunto</option>
+                  <option value="exposicion">Quiero exponer mi arte</option>
+                  <option value="concierto">Quiero tocar en el Escenario</option>
+                  <option value="evento">Quiero organizar un evento</option>
+                  <option value="visita">Quiero visitar el edificio</option>
+                  <option value="colaboracion">Propuesta de colaboración</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué tienes en mente..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" aria-label="Edificio Bertha">EDIFICIO <span>BERTHA</span></div>
+          <p>Arte urbano, música en vivo y comunidad en un edificio histórico de Mexicali. Donde el pasado se encuentra con el futuro creativo.</p>
+        </div>
+        <nav aria-label="Navegación del pie">
+          <h4 class="footer-title">Navegar</h4>
+          <ul class="footer-links">
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#espacios">Espacios</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#comunidad">Comunidad</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Espacios">
+          <h4 class="footer-title">Espacios</h4>
+          <ul class="footer-links">
+            <li><a href="#espacios">Galería Urbana</a></li>
+            <li><a href="#espacios">Escenario Bertha</a></li>
+            <li><a href="#espacios">La Sala</a></li>
+            <li><a href="#contacto">Reservaciones</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4 class="footer-title">Síguenos</h4>
+          <div class="social-links">
+            <a href="https://instagram.com/edificiobertha" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Edificio Bertha (abre en nueva pestaña)">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Edificio Bertha (abre en nueva pestaña)">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Edificio Bertha (abre en nueva pestaña)">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Spotify de Edificio Bertha (abre en nueva pestaña)">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12c2.5-1 5.5-1 8 0M7 15c3.5-1.5 6.5-1.5 10 0M6 9c4-1.5 8-1.5 12 0"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Edificio Bertha. Todos los derechos reservados.</p>
+        <p>Diseñado con 🔥 en Mexicali, B.C.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
