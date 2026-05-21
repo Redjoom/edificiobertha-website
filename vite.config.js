@@ -3,6 +3,7 @@ import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   root: '.',
+  plugins: [],
   build: {
     outDir: 'dist',
     minify: true,
