@@ -50,12 +50,6 @@ export function initAnimations(lenis) {
     scrollTrigger: { trigger: '.espacios-grid', start: 'top 80%' },
   });
 
-  // ── Galería: entrance stagger ──
-  gsap.from('.galeria-item', {
-    opacity: 0, scale: 0.96, stagger: 0.07, duration: 0.7, ease: 'power2.out',
-    scrollTrigger: { trigger: '.galeria-grid', start: 'top 80%' },
-  });
-
   // ── Comunidad: floating stagger ──
   gsap.from('.comunidad-card', {
     opacity: 0, y: 40, stagger: 0.1, duration: 0.8, ease: 'power2.out',

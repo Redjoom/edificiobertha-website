@@ -158,9 +158,11 @@
   gap: var(--space-xs);
 }
 .galeria-item { position: relative; overflow: hidden; border-radius: 4px; cursor: pointer; }
-.galeria-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.galeria-item:nth-child(4) { grid-column: span 2; }
-.galeria-item:nth-child(6) { grid-row: span 2; }
+.galeria-item:nth-child(1)  { grid-column: span 2; grid-row: span 2; }
+.galeria-item:nth-child(4)  { grid-column: span 2; }
+.galeria-item:nth-child(6)  { grid-row: span 2; }
+.galeria-item:nth-child(9)  { grid-column: span 2; }
+.galeria-item:nth-child(11) { grid-row: span 2; }
 .galeria-item img {
   width: 100%;
   height: 100%;
@@ -275,6 +277,42 @@
   font-size: 0.78rem;
   color: var(--color-text-muted);
 }
+
+/* ── Instagram CTA ── */
+.instagram-cta { background: var(--color-bg-secondary); text-align: center; }
+.ig-preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xs);
+  margin: var(--space-lg) 0 var(--space-md);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ig-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  display: block;
+}
+.ig-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-medium), filter var(--transition-medium); filter: brightness(0.85); }
+.ig-tile:hover img { transform: scale(1.06); filter: brightness(1); }
+.ig-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,10,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+}
+.ig-overlay svg { width: 28px; height: 28px; stroke: white; opacity: 0; transition: opacity var(--transition-fast); }
+.ig-tile:hover .ig-overlay { background: rgba(10,10,10,0.4); }
+.ig-tile:hover .ig-overlay svg { opacity: 1; }
+.ig-cta { display: flex; flex-direction: column; align-items: center; gap: var(--space-sm); }
+.ig-handle { font-family: var(--font-mono); font-size: 1.1rem; color: var(--color-accent); letter-spacing: 0.05em; }
+@media (max-width: 768px) { .ig-preview { grid-template-columns: repeat(2, 1fr); max-width: 400px; } }
 
 /* ── Comunidad ── */
 .comunidad { background: var(--color-bg-secondary); }
