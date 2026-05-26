@@ -1,0 +1,46 @@
+# ── Archivos sensibles raíz ──────────────────────────────────────
+/.env              /404   404
+/.git              /404   404
+/.git/*            /404   404
+/.gitignore        /404   404
+/.htaccess         /404   404
+/.DS_Store         /404   404
+
+# ── Archivos sensibles en subdirectorios (patrón wildcard) ───────
+*/.env             /404   404
+*/.git             /404   404
+*/.git/*           /404   404
+*/.gitignore       /404   404
+*/.DS_Store        /404   404
+
+# ── Paneles admin / PHP / WordPress ──────────────────────────────
+/wp-admin          /404   404
+/wp-admin/*        /404   404
+/wp-login.php      /404   404
+/wp-includes/*     /404   404
+/wp-content/*      /404   404
+/phpmyadmin        /404   404
+/phpmyadmin/*      /404   404
+/phpinfo.php       /404   404
+/config.php        /404   404
+/xmlrpc.php        /404   404
+/admin             /404   404
+/admin/*           /404   404
+/server-status     /404   404
+/server-info       /404   404
+
+# ── Archivos de configuración / dependencias ──────────────────────
+/composer.json     /404   404
+/composer.lock     /404   404
+/package.json      /404   404
+/package-lock.json /404   404
+
+# ── Backups y dumps ───────────────────────────────────────────────
+/backup.zip        /404   404
+/backup.sql        /404   404
+/database.sql      /404   404
+/*.sql             /404   404
+/*.zip             /404   404
+/*.bak             /404   404
+/*.tar             /404   404
+/*.tar.gz          /404   404
